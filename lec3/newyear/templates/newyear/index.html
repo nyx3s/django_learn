@@ -1,0 +1,15 @@
+{%load static%}
+<html lang="en">
+	<head>
+		<title>hello</title>
+		<link href="{% static 'newyear/index.css' %}"rel="stylesheet" >
+	</head>
+	<body>
+		{%if now%}
+			<h1>YES</h1>
+		{%else%}
+			<h1>NO</h1>
+		{%endif%}
+
+	</body>
+	</html>

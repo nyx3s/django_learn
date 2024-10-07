@@ -1,0 +1,26 @@
+
+colorscheme vim
+set nu 
+call plug#begin('~/.local/share/nvim/plugged')
+
+" Add your plugins here
+" Example:
+" Plug 'tpope/vim-sensible'
+
+" for vim theme
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' } " Recommended, not required.
+Plug 'daltonmenezes/aura-theme', { 'rtp': 'packages/neovim' }
+
+" Autocomplete and LSP setup
+Plug 'neovim/nvim-lspconfig'     " LSP support for various languages
+Plug 'hrsh7th/nvim-cmp'          " Autocomplete plugin
+Plug 'hrsh7th/cmp-nvim-lsp'      " LSP source for nvim-cmp
+Plug 'saadparwaiz1/cmp_luasnip'  " Snippet completions
+Plug 'L3MON4D3/LuaSnip'          " Snippet engine
+
+" Syntax highlighting and additional features
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'windwp/nvim-autopairs'     " Autopair brackets, quotes, etc.
+
+call plug#end()
+
