@@ -1,0 +1,45 @@
+# Python compiled files
+*.pyc
+__pycache__/
+
+# Django migration files (sometimes team decides to commit them, but generally good to keep)
+migrations/
+
+# Environment / virtualenv
+env/
+venv/
+.venv/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Database files (if using SQLite locally)
+db.sqlite3
+
+# Static and media files (usually collected/generated, not stored in repo)
+staticfiles/
+media/
+
+# Logs
+*.log
+logs/
+
+# Secrets and environment variables
+.env
+.env.*
+
+# MacOS system files
+.DS_Store
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# pytest cache
+.pytest_cache/
+
+# Docker files that may be generated
+docker-compose.override.yml
